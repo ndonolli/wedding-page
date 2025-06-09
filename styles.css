@@ -17,6 +17,9 @@ font-family: 'Montserrat', sans-serif;
 }
 
 body {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-top: 45px;
   background: #fafafa;
   font-family: 'Montserrat', sans-serif;
