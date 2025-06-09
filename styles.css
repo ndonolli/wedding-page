@@ -77,21 +77,13 @@ header h1 {
   text-align: center;
 }
 
-/* header h1::after {
-	content: "";
-	position: absolute;
-	top: 5px;
-	left: 0;
-	height: 4px;
-	width: 100px;
-	margin: 50px 0 0 0px;
-	background: #b2b2b2;
-}
- */
 #cruises {
   padding: 100px 0;
 }
 
+section {
+  margin-bottom: 5em;
+}
 /* 
 ==================================================
 Navigation menus
@@ -131,14 +123,15 @@ STANDARD MENU
 
 .strike {
   text-decoration: line-through;
-  text-decoration-color: red;
+  text-decoration-color: #ff5757;
 }
 
 .replacement {
   position: relative;
-  color: red;
-  font-family: 'Permanent Marker', cursive;
+  color: #ff5757;
+  font-family: "Fuzzy Bubbles", sans-serif;
   font-size: 0.75em;
+  display: block;
 }
 .replacement.above {
   top: -10px;
@@ -426,46 +419,6 @@ Cruises
   }
 }
 
-.bg1 {
-  background: linear-gradient(rgba(30, 30, 30, 0.5), rgba(30, 30, 30, 0.5)),
-    url('https://images.unsplash.com/photo-1497338300926-77866091257e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=26ab603200563a1aef63392d84ef5773&auto=format&fit=crop&w=2250&q=80')
-      no-repeat center;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
-  padding: 20px;
-}
-
-.bg2 {
-  background: linear-gradient(rgba(30, 30, 30, 0.5), rgba(30, 30, 30, 0.5)),
-    url('https://images.unsplash.com/photo-1517345438041-cf88a04b4689?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=819c43af5a72b1ab7a320f3013faf305&auto=format&fit=crop&w=2250&q=80')
-      no-repeat center;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
-  padding: 20px;
-}
-
-.bg3 {
-  background: linear-gradient(rgba(30, 30, 30, 0.5), rgba(30, 30, 30, 0.5)),
-    url('https://images.unsplash.com/photo-1519331582073-283f1a211a3e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5e2523370d1085a679451aecbca3b136&auto=format&fit=crop&w=2338&q=80')
-      no-repeat center;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
-  padding: 20px;
-}
-
-.bg4 {
-  background: linear-gradient(rgba(30, 30, 30, 0.5), rgba(30, 30, 30, 0.5)),
-    url('https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b66e9d835de3873a86d1cec996a1af06&auto=format&fit=crop&w=2690&q=80')
-      no-repeat center;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
-  padding: 20px;
-}
-
 /* 
 ==================================================
 Onboard
@@ -491,41 +444,7 @@ Onboard
   color: #c0bab2;
 }
 
-.img-one {
-  background: url('makki-nathan-cruise-1.jpg')
-    no-repeat center;
-  background-size: cover;
-}
 
-.img-two {
-  background: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-0.3.5&s=5a703e99fc6bb05f6dcdabf39ed55f43&auto=format&fit=crop&w=1934&q=80')
-    no-repeat center;
-  background-size: cover;
-}
-
-.img-three {
-  background: url('https://images.unsplash.com/photo-1505232070786-2f46d15f9f5e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8d0b72c290cbac7926edb604b1f40793&auto=format&fit=crop&w=2729&q=80')
-    no-repeat center;
-  background-size: cover;
-}
-
-.img-four {
-  background: url('https://images.unsplash.com/photo-1463468217891-c11f48e6310a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=23a795a8a105fbfae3642d7b2be16edc&auto=format&fit=crop&w=1934&q=80')
-    no-repeat center;
-  background-size: cover;
-}
-
-.img-five {
-  background: url('https://images.unsplash.com/photo-1504682213184-3082b2bc5c3a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=27511b6b9a3c833fcc67b9df730abf21&auto=format&fit=crop&w=2302&q=80')
-    no-repeat center;
-  background-size: cover;
-}
-
-.img-six {
-  background: url('https://images.unsplash.com/photo-1502850436161-2979b31216b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=217e386bc48199967da63e81efe9f7f5&auto=format&fit=crop&w=2252&q=80')
-    no-repeat center;
-  background-size: cover;
-}
 
 /* 
 ==================================================
@@ -555,6 +474,19 @@ Banner ad
   color: #fff;
   opacity: 0.5;
   letter-spacing: 4px;
+}
+
+#faq {
+  background-color: #F6EDDF;
+  text-align: center;
+}
+
+#faq .myrow {
+  justify-content: center;
+}
+
+#faq > .myrow > .mycol {
+  max-width: 800px;
 }
 
 /* 
@@ -691,7 +623,7 @@ Media Queries
 
 @media (max-width: 850px) {
   .centered p {
-    font-size: 3em;
+    font-size: 1.7em;
   }
 }
 
