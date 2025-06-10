@@ -26,17 +26,18 @@ body {
   font-size: 18px;
 }
 
-ul {
-  list-style: none;
-}
 
 li {
-  display: inline;
+  text-align: left;
+}
+
+.align-left {
+  text-align: left;
 }
 
 a {
   text-decoration: none;
-  color: #79abcc;
+  color: #307DB0;
 }
 
 .svg-inline--fa {
@@ -68,9 +69,56 @@ header h1 {
   position: relative;
   display: inline-block;
   font-weight: 400;
-  color: #b2b2b2;
+  color: #4e4d4d;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.btn {
+  position: relative;
+  background: transparent;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 4px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  border-radius: 4px;
+  transition: 0.3s;
+  z-index: -1;
+  background: transparent;
+}
+
+btn:before {
+  content: "";
+  position: absolute;
+}
+
+/**** from left to right style ****/
+.btn-l-r {
+  color: #307DB0;
+  border-color: #307DB0;
+}
+.btn-l-r:hover {
+  color: white;
+}
+.btn-l-r:hover:after {
+  background: #307DB0;
+  width: 100%;
+}
+.btn-l-r:after {
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+}
+.btn-huge {
+  padding: 18px 25px;
 }
 
 .center {
@@ -81,8 +129,16 @@ header h1 {
   padding: 100px 0;
 }
 
-section {
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mb-5 {
   margin-bottom: 5em;
+}
+
+.bg-blue {
+  background: #7fb7dc2b;
 }
 /* 
 ==================================================
@@ -428,6 +484,7 @@ Onboard
 .img {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 
 .myrow-thirds.img-row {
@@ -487,6 +544,12 @@ Banner ad
 
 #faq > .myrow > .mycol {
   max-width: 800px;
+}
+
+.shore {
+  height: 100px;
+  background: linear-gradient(0deg, #F6EDDF, transparent);
+
 }
 
 /* 
